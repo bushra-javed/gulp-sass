@@ -1,10 +1,53 @@
 // @import "compass";
 @import "./partials/variables";
-// @import "./partials/base";
-// @import "./partials/layouts";
+@import "./partials/base";
+@import "./partials/layouts";
 // @import "./partials/normalize";
 // @import "compass/css3";
 
+.bc {
+  border: 1px solid red;
+}
+
+
+  .flex-wrapper {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    //reverse-row  // column // reverse-column 
+    flex-wrap: nowrap;
+    // | wrap | wrap-reverse;
+    //justify-content: center; //space-around;
+    input{
+      width:200px;
+    }
+    img{
+      height: 50px;
+      width: 50px;
+    }
+    li{
+      // border: 1px solid red; 
+margin:auto;
+    }
+
+    span{
+          // margin-left:10px;
+          border: 1px solid red; 
+          color:red;
+        }
+  }
+.flex-start{
+  @extend .flex-wrapper;
+  justify-content: flex-start;
+  border:1px solid red;
+}
+
+.flex-end{
+  @extend .flex-wrapper;
+  justify-content: flex-end;
+  border:1px solid red;
+}
 
 #banner {
   padding: 10px;
@@ -168,11 +211,11 @@ footer {
   // @include border-radius(5px);
   // @include box-shadow(5px 5px 5px 2px $gray);
   margin-top: 10px;
-  
+
 }
 
-#main-title{
-// @include text-shadow(5px 5px 5px rgba($blue,.2));
+#main-title {
+  // @include text-shadow(5px 5px 5px rgba($blue,.2));
 }
 
 .left-sidebar-links {
@@ -192,23 +235,23 @@ footer {
       }
 
       &:nth-child(2) {
-        background-color: mix($yellow,$white, 50%);
+        background-color: mix($yellow, $white, 50%);
       }
 
       &:nth-child(3) {
-        background-color: fade-out($orange,.5);
+        background-color: fade-out($orange, .5);
       }
 
       &:nth-child(4) {
 
-        background-color: fade-in($orange,.8);
+        background-color: fade-in($orange, .8);
 
       }
-      
+
       &:nth-child(5) {
         background-color: rgba(0, 0, 200, .5);
       }
-      
+
       &:nth-child(6) {
         background-color: adjust-hue($main-green, 90dg);
       }
@@ -216,30 +259,32 @@ footer {
       &:nth-child(7) {
         background-color: grayscale($orange);
       }
+
       &:nth-child(8) {
-        background-color: adjust-color($main-green, $red:0,$green:140,$blue:0);
+        background-color: adjust-color($main-green, $red:0, $green:140, $blue:0);
       }
 
       &:nth-child(9) {
-        background-color: shade($yellow,10%);
+        background-color: shade($yellow, 10%);
       }
+
       &:nth-child(10) {
-        background-color: tint($yellow,50%);
+        background-color: tint($yellow, 50%);
       }
     }
   }
 
 }
 
-%main-green-gradient{
+%main-green-gradient {
 
   // @include background-image(linear-gradient(left,$main-green 60%, $white,$red,$yellow));
 }
 
 
-footer{
+footer {
   // @extend %main-green-gradient;
-} 
+}
 
 
 
