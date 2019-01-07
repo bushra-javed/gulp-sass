@@ -32,7 +32,6 @@ gulp.src('src/images/.*')
 //minify js   
 
 
-
 gulp.task('minify',function(){
     gulp.src('src/js/*.js')
    .pipe(uglify())
