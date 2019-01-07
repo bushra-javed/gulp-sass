@@ -33,7 +33,6 @@
 
   padding-top: 10px;
 
-
   .flex-start {
     @extend .flex-wrapper;
     list-style: none;
@@ -79,30 +78,16 @@
 
       &:hover {
         background-color: lighten(#fff, $amount: 10);
+        background-color: complement($main-green);
         color: set-text-color(#fff);
         border: 1px solid red;
+        
 
       }
     }
 
   }
 }
-
-// //header
-// .flex-wrapper1{
-//     @extend .flex-wrapper;
-//     list-style: none;  
-//   li{
-//     display: inline-block;
-//     // width:150px;
-//     // height: 150px;
-//     color:red;
-//     // border: 1px solid red;
-//     padding: 5px;
-//     margin: 5px;
-//   }
-// }
-
 
 
 
@@ -143,9 +128,19 @@
 }
 
 
+
+
+
 #sidebar-left {
   float: left;
-margin-top: -8px;
+  margin-top: -8px;
+
+
+
+
+
+
+
   // border: 1px solid red;
   #vert-nav {
     ul {
@@ -154,31 +149,93 @@ margin-top: -8px;
       padding: 0;
       line-height: 1.7em;
       width: 120px;
-// border: 1px solid red;
+      // border: 1px solid red;
 
       // border: 1px solid red;
-      .left-sidebar-links {
+      li {
         border-bottom: 2px solid $main-green;
-      
+        border-color: darken($main-green, 70%);
+
         &:last-child {
           border-bottom: none;
         }
-      
+
+        &:nth-child(1) {
+          background-color: rgba(75, 43, 43, 0.5);
+        }
+
+        &:nth-child(2) {
+          background-color: mix($yellow, $white, 50%);
+        }
+
+        &:nth-child(3) {
+          background-color: fade-out($orange, .5);
+        }
+
+        &:nth-child(4) {
+
+          background-color: fade-in($orange, .8);
+
+        }
+
+        &:nth-child(5) {
+          background-color: rgba(0, 200, 43, 0.5);
+        }
+
+        &:nth-child(6) {
+          background-color: adjust-hue($main-green, 90dg);
+        }
+
+        &:nth-child(7) {
+          background-color: grayscale($orange);
+        }
+
+        &:nth-child(8) {
+          background-color: adjust-color($main-green, $red:0, $green:140, $blue:0);
+        }
+
+        &:nth-child(9) {
+          background-color: rgba(0, 200, 43, 0.5);
+        }
+
+        &:nth-child(10) {
+          background-color: adjust-hue($main-green, 90dg);
+        }
+
+        &:nth-child(11) {
+          background-color: grayscale($orange);
+        }
+
+        &:nth-child(12) {
+          background-color: grayscale($orange);
+        }
+
+
+        &:nth-child(13) {
+          background-color: grayscale($orange);
+        }
+
+        &:nth-child(14) {
+          background-color: grayscale($orange);
+        }
+
         a {
-          padding-left: 20px;
           text-decoration: none;
           color: #00647D;
-      
+          padding: 2px 20px;
           display: block;
           opacity: 7;
           color: $main-green;
-      
+
           &:hover {
             opacity: 1;
           }
         }
 
-        
+
+
+
+
       }
 
     }
@@ -196,8 +253,8 @@ margin-top: -8px;
   }
 
   .right-sidebar-image {
-    height: 93px;
-    width: 179px;
+    // height: 93px;
+    // width: 179px;
     background: $gray;
     margin: 12px 0px;
   }
@@ -212,7 +269,7 @@ main#content {
 
   section.first-section {
     // border: 1px solid red;
-margin: 30px;
+    margin: 30px;
 
     h2 {
       margin-top: 0px;
@@ -220,25 +277,25 @@ margin: 30px;
       color: #00647D;
       line-height: 1em;
     }
-    
+
     article {
       // border: 1px solid red;
-      
+
       #feature-image {
-        
+
         // margin: 20px;
-        height: auto;
+        height: 200px;
         width: 100%;
-        max-width: 440px;
+        // max-width: 440px;
         background: $gray;
       }
-      
+
       p {
         margin: 20px 0;
         // border: 1px solid red;
       }
     }
-}
+  }
 }
 
 
@@ -249,6 +306,7 @@ footer {
   clear: both;
   background: #00647D;
   color: #FFF;
+  text-align: center;
   padding: 10px;
 }
 
@@ -283,63 +341,8 @@ footer {
   // @include text-shadow(5px 5px 5px rgba($blue,.2));
 }
 
-.left-sidebar-links {
-  border-color: darken($main-green, 70%)
-}
-
-#search-button:hover {
-  background-color: complement($main-green);
-}
 
 
-#sidebar-left {
-  ul {
-    li {
-      &:nth-child(1) {
-        background-color: rgba(0, 0, 200, .5);
-      }
-
-      &:nth-child(2) {
-        background-color: mix($yellow, $white, 50%);
-      }
-
-      &:nth-child(3) {
-        background-color: fade-out($orange, .5);
-      }
-
-      &:nth-child(4) {
-
-        background-color: fade-in($orange, .8);
-
-      }
-
-      &:nth-child(5) {
-        background-color: rgba(0, 0, 200, .5);
-      }
-
-      &:nth-child(6) {
-        background-color: adjust-hue($main-green, 90dg);
-      }
-
-      &:nth-child(7) {
-        background-color: grayscale($orange);
-      }
-
-      &:nth-child(8) {
-        background-color: adjust-color($main-green, $red:0, $green:140, $blue:0);
-      }
-
-      &:nth-child(9) {
-        background-color: shade($yellow, 10%);
-      }
-
-      &:nth-child(10) {
-        background-color: tint($yellow, 50%);
-      }
-    }
-  }
-
-}
 
 %main-green-gradient {
 
