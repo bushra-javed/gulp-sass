@@ -21,8 +21,8 @@ article p a {
   background: #FFFFFF;
   margin: 0 auto; }
   #wrapper .container {
-    max-width: 800px;
-    border: 1px solid red; }
+    border: 11px soli  green;
+    max-width: 800px; }
 
 .flex-wrapper, .header .flex-start, .header .flex-end, #horz-nav {
   display: flex;
@@ -98,7 +98,7 @@ article p a {
       #sidebar-left #vert-nav ul li:last-child {
         border-bottom: none; }
       #sidebar-left #vert-nav ul li:nth-child(1) {
-        background-color: rgba(75, 43, 43, 0.5); }
+        background-color: pink; }
       #sidebar-left #vert-nav ul li:nth-child(2) {
         background-color: #ffff80; }
       #sidebar-left #vert-nav ul li:nth-child(3) {

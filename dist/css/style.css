@@ -20,7 +20,8 @@ article p a {
 body {
   background-color: #fff;
   font-family: "Arial";
-  text-align: center; }
+  text-align: center;
+  color: black; }
 
 .button, .button-a, .button-b {
   padding: 10px 15px;
@@ -83,3 +84,6 @@ nav#main-nav {
     text-decoration: none;
     background-color: orange;
     color: #fff; }
+
+.kkk {
+  color: purple; }

@@ -2,13 +2,13 @@
 @import "./partials/base";
 @import "./partials/layouts";
 @import "./partials/functions";
-//varibales
-
 
 body {
     background-color: $body-bg;
     font-family: $main-font;
+
     text-align: center;
+    color:black;
 }
 
 .button{
@@ -129,3 +129,8 @@ color:set-text-color($dark-color);
 }
 }
 
+
+
+.kkk{
+    color:purple;
+}

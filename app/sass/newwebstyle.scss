@@ -1,20 +1,17 @@
-// @import "compass";
 @import "./partials/variables";
 @import "./partials/base";
 @import "./partials/layouts";
 @import "./partials/functions";
-// @import "./partials/normalize";
-// @import "compass/css3";
 
 
 #wrapper {
   background: $white;
   margin: 0 auto;
-
+  
   .container {
-
+    
+    border: 11px soli  green;
     max-width: 800px;
-    border: 1px solid red;
   }
 }
 
@@ -161,7 +158,8 @@
         }
 
         &:nth-child(1) {
-          background-color: rgba(75, 43, 43, 0.5);
+          background-color:pink;
+          // rgba(75, 43, 43, 0.5);
         }
 
         &:nth-child(2) {
@@ -346,7 +344,7 @@ footer {
 
 %main-green-gradient {
 
-  // @include background-image(linear-gradient(left,$main-green 60%, $white,$red,$yellow));
+  //  @include background-image(linear-gradient(left,$main-green 60%, $white,$red,$yellow));
 }
 
 
