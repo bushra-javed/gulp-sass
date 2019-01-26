@@ -50,8 +50,11 @@ return gulp.src(['app/sass/*.scss'])
 
 gulp.task('copyHtml',function(){
 
-    return gulp.src(['./*.html'])
+    return gulp.src(['app/*.html'])
+            .pipe(gulp.dest('./'))
             .pipe(gulp.dest('dist'))
+
+            // files are duplicated for git pages purpose at root and in dest
             .pipe(browserSync.stream());
     });
 
