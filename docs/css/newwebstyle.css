@@ -17,12 +17,58 @@ article p a {
   article p a:visited {
     color: #0000FF; }
 
+.navbar-custom {
+  margin: 0;
+  padding: 0;
+  background-color: #00647D;
+  box-shadow: 1px 4px 4px #444444; }
+  .navbar-custom .navbar-brand {
+    padding-left: 30px; }
+    .navbar-custom .navbar-brand img {
+      height: 50px; }
+  .navbar-custom .navbar-toggler.custom-toggler {
+    margin-right: 25px;
+    border: 1px solid #fff; }
+    .navbar-custom .navbar-toggler.custom-toggler .navbar-toggler-icon {
+      color: #FFFFFF;
+      font-size: 1.5rem;
+      line-height: 1.5em;
+      margin: auto; }
+    .navbar-custom .navbar-toggler.custom-toggler:focus, .navbar-custom .navbar-toggler.custom-toggler:active {
+      outline: none; }
+  .navbar-custom .navbar-nav li.active a {
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #008db0; }
+    .navbar-custom .navbar-nav li.active a:focus, .navbar-custom .navbar-nav li.active a:hover {
+      background-color: #008db0; }
+  .navbar-custom .navbar-nav li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    box-sizing: border-box;
+    height: 60px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 300;
+    padding-top: 10px;
+    padding: 10px 25px 0 25px !important; }
+    .navbar-custom .navbar-nav li a:hover {
+      color: #EA6045;
+      background-color: rgba(12, 184, 182, 0.21);
+      background-color: #007897;
+      border-bottom: 3px solid #EA6045; }
+    .navbar-custom .navbar-nav li a:focus {
+      color: #EA6045;
+      background-color: rgba(12, 184, 182, 0.21);
+      background-color: #007897;
+      border-bottom: 3px solid #EA6045; }
+
 #wrapper {
   background: #FFFFFF;
   margin: 0 auto; }
   #wrapper .container {
-    border: 11px soli  green;
-    max-width: 800px; }
+    border: 11px soli  green; }
 
 .flex-wrapper, .header .flex-start, .header .flex-end, #horz-nav {
   display: flex;
@@ -93,7 +139,7 @@ article p a {
     line-height: 1.7em;
     width: 120px; }
     #sidebar-left #vert-nav ul li {
-      border-bottom: 2px solid #00647D;
+      border-bottom: 2px solid #00647d;
       border-color: black; }
       #sidebar-left #vert-nav ul li:last-child {
         border-bottom: none; }
@@ -131,7 +177,7 @@ article p a {
         padding: 2px 20px;
         display: block;
         opacity: 7;
-        color: #00647D; }
+        color: #00647d; }
         #sidebar-left #vert-nav ul li a:hover {
           opacity: 1; }
 

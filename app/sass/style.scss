@@ -21,7 +21,7 @@ body {
 
 a {
     text-decoration: none;
-    color: $dark-color;
+    color: $color-dark;
     // color:red;
 }
 
@@ -35,8 +35,8 @@ a {
 
 header#main-header {
     padding: 1em;
-    background: $primary-color;
-    color: set-text-color($primary-color);
+    background: $color-primary;
+    color: set-text-color($color-primary);
 
     h1 {
         font-size: 40px;
@@ -48,7 +48,8 @@ header#main-header {
 
 
 nav#main-nav {
-    background-color: $secondary-color;
+    background-color: $color-secondary;
+// border: 11px solid red;    
     height: 40px;
 
     ul {
@@ -86,16 +87,16 @@ h1{
 #section-a{
     @extend .section;
 
-background-color: $light-color;
-color:set-text-color($light-color);
+background-color: $color-light;
+color:set-text-color($color-light);
 }
 
 
 #section-b{
     @extend .section;
-background-color: $dark-color;
+background-color: $color-dark;
 
-color:set-text-color($dark-color);
+color:set-text-color($color-dark);
 
 
 }
@@ -106,8 +107,8 @@ color:set-text-color($dark-color);
 
 .button-a{
     @extend .button;
-    background-color: $primary-color;
-    color:set-text-color($primary-color);
+    background-color: $color-primary;
+    color:set-text-color($color-primary);
     &:hover{
         text-decoration: none;
         background-color: orange;
@@ -119,8 +120,8 @@ color:set-text-color($dark-color);
 
 .button-b{
     @extend .button;
-    background-color: $light-color;
-    color:set-text-color($light-color);
+    background-color: $color-light;
+    color:set-text-color($color-light);
 &:hover{
     text-decoration: none;
     background-color: orange;

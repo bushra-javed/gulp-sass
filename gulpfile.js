@@ -1,23 +1,11 @@
-
-// "use strict";
-//import gulp from 'gulp';
 const gulp=require('gulp');
 const browserSync=require('browser-sync').create();
 const sass=require('gulp-sass');
 //const autoprefixer=require('gulp-autoprefixer');
-
 const imagemin = require('gulp-imagemin');
 const uglify=require('gulp-uglify');
 // const concat=require('gulp-concat');
 
-
-// copy html  this will copy files from src to dist
-
-// gulp.task('copyHtml',function(){
-//     gulp.src('src/*.html')
-//     .pipe(gulp.dest('dist'));    
-    
-// });
 
 
 
@@ -25,24 +13,22 @@ const uglify=require('gulp-uglify');
 gulp.task('imageMin',()=>
 gulp.src('app/images/*')
 .pipe(imagemin())
-.pipe(gulp.dest('dist/images'))
+.pipe(gulp.dest('docs/images'))
 );
 
 //minify js   
-
-
 gulp.task('minify',function(){
     gulp.src('app/js/*.js')
    .pipe(uglify())
-   .pipe(gulp.dest('dist/js'));
+   .pipe(gulp.dest('docs/js'));
 });
 
 //compile sass
-gulp.task('sass',function(){
 
+gulp.task('sass',function(){
 return gulp.src(['app/sass/*.scss'])
         .pipe(sass())
-        .pipe(gulp.dest('dist/css'))
+        .pipe(gulp.dest('docs/css'))
         .pipe(browserSync.stream());
 });
 
@@ -52,7 +38,7 @@ gulp.task('copyHtml',function(){
 
     return gulp.src(['app/*.html'])
             .pipe(gulp.dest('./'))
-            .pipe(gulp.dest('dist'))
+            .pipe(gulp.dest('docs'))
 
             // files are duplicated for git pages purpose at root and in dest
             .pipe(browserSync.stream());
@@ -62,15 +48,14 @@ gulp.task('copyHtml',function(){
 // Watch Sass & Serve
 gulp.task('serve', ['sass','copyHtml'], function() {
     browserSync.init({
-        server: "./dist"  
+        server: "./docs"  
     });
-
     gulp.watch(['app/sass/*.scss'], ['sass']);
     gulp.watch(['app/*.html'], ['copyHtml']);
     gulp.watch(['app/images/*'], ['imageMin']);
-    
     gulp.watch("app/*.html").on('change', browserSync.reload);
 });
+
 
 // Default Task
 gulp.task('default', ['serve', 'sass','copyHtml','imageMin']);
