@@ -28,8 +28,8 @@ article p a:visited {
   margin: 0;
   padding: 0;
   background-color: #00647D;
-  -webkit-box-shadow: 1px 4px 4px #444444;
-          box-shadow: 1px 4px 4px #444444;
+  -webkit-box-shadow: 1px 2px 2px  #333;
+          box-shadow: 1px 2px 2px  #333;
 }
 
 .navbar-custom .navbar-brand {
@@ -82,14 +82,12 @@ article p a:visited {
 
 .navbar-custom .navbar-nav li a:hover {
   color: #EA6045;
-  background-color: rgba(12, 184, 182, 0.21);
   background-color: #007897;
   border-bottom: 3px solid #EA6045;
 }
 
 .navbar-custom .navbar-nav li a:focus {
   color: #EA6045;
-  background-color: rgba(12, 184, 182, 0.21);
   background-color: #007897;
   border-bottom: 3px solid #EA6045;
 }
@@ -103,7 +101,7 @@ article p a:visited {
   border: 11px soli  green;
 }
 
-.flex-wrapper, .header .flex-start, .header .flex-end, #horz-nav {
+.flex-wrapper, .header .flex-start, .header .flex-end {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,6 +117,7 @@ article p a:visited {
 }
 
 .header {
+  margin-top: 60px;
   padding-top: 10px;
 }
 
@@ -162,41 +161,17 @@ article p a:visited {
 .header .flex-end button:hover {
   background-color: white;
   background-color: #7d1900;
-  color: set-text-color(#fff);
+  color: #000;
   border: 1px solid red;
 }
 
-#horz-nav {
-  background-color: #00647D;
-  max-width: 100%;
-  height: 45px;
-  margin-bottom: 10px;
-}
-
-#horz-nav ul {
-  margin-left: 40px;
-  padding-top: 10px;
-  list-style: none;
-}
-
-#horz-nav ul li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-#horz-nav ul li a {
-  text-decoration: none;
-  color: #FFF;
-  padding-left: 10px;
-}
-
-#horz-nav ul li a a:hover {
-  color: #FF7F00;
-}
-
 #sidebar-left {
-  float: left;
+  clear: both;
   margin-top: -8px;
+}
+
+#sidebar-left #vert-nav {
+  float: left;
 }
 
 #sidebar-left #vert-nav ul {
@@ -285,24 +260,9 @@ article p a:visited {
   opacity: 1;
 }
 
-#sidebar-right {
-  float: right;
-  width: 213px;
-}
-
-#sidebar-right .right-sidebar-title {
-  color: #00647D;
-  font-weight: bold;
-}
-
-#sidebar-right .right-sidebar-image {
-  background: #808080;
-  margin: 12px 0px;
-}
-
 main#content {
-  margin: 0px 213px 0px 109px;
   padding: 0px;
+  border: 1px solid red;
 }
 
 main#content section.first-section {
@@ -316,8 +276,11 @@ main#content section.first-section h2 {
   line-height: 1em;
 }
 
+main#content section.first-section article {
+  border: 1px solid red;
+}
+
 main#content section.first-section article #feature-image {
-  height: 200px;
   width: 100%;
   background: #808080;
 }

@@ -3,7 +3,7 @@
     padding: 0;
     // border:1px solid red;
     background-color:$color-primary;
-    box-shadow: 1px 4px 4px #444444;
+    box-shadow: 1px 2px 2px  #333;
   
     .navbar-brand {
         padding-left: 30px;
@@ -51,6 +51,7 @@
                 font-size: 14px;
                 box-sizing: border-box;
                 height: 60px;
+
                 line-height: 40px;
                 text-align: center;
                 font-weight: 300;
@@ -58,8 +59,8 @@
                 padding: 10px 25px 0 25px !important;
   
                 &:hover {
+                    // font-weight: 700;
                     color: $color-accent;
-                    background-color: rgba(12, 184, 182, 0.21);
                     background-color: lighten($color-primary, 5%);
   
                     border-bottom: 3px solid $color-accent;
@@ -67,7 +68,6 @@
   
                 &:focus {
                     color: $color-accent;
-                    background-color: rgba(12, 184, 182, 0.21);
                     background-color: lighten($color-primary, 5%);
                     border-bottom: 3px solid $color-accent;
                 }

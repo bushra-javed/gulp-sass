@@ -21,7 +21,7 @@ article p a {
   margin: 0;
   padding: 0;
   background-color: #00647D;
-  box-shadow: 1px 4px 4px #444444; }
+  box-shadow: 1px 2px 2px  #333; }
   .navbar-custom .navbar-brand {
     padding-left: 30px; }
     .navbar-custom .navbar-brand img {
@@ -55,12 +55,10 @@ article p a {
     padding: 10px 25px 0 25px !important; }
     .navbar-custom .navbar-nav li a:hover {
       color: #EA6045;
-      background-color: rgba(12, 184, 182, 0.21);
       background-color: #007897;
       border-bottom: 3px solid #EA6045; }
     .navbar-custom .navbar-nav li a:focus {
       color: #EA6045;
-      background-color: rgba(12, 184, 182, 0.21);
       background-color: #007897;
       border-bottom: 3px solid #EA6045; }
 
@@ -85,7 +83,7 @@ a {
 header#main-header {
   padding: 1em;
   background: #00647D;
-  color: set-text-color(#00647D); }
+  color: #fff; }
   header#main-header h1 {
     font-size: 40px; }
 
@@ -110,27 +108,27 @@ nav#main-nav {
 
 #section-a {
   background-color: #f4f4f4;
-  color: set-text-color(#f4f4f4); }
+  color: #000; }
 
 #section-b {
   background-color: #333;
-  color: set-text-color(#333); }
+  color: #fff; }
 
 .button-a {
   background-color: #00647D;
-  color: set-text-color(#00647D); }
+  color: #fff; }
   .button-a:hover {
     text-decoration: none;
     background-color: orange;
-    color: set-text-color(orange); }
+    color: #fff; }
 
 .button-b {
   background-color: #f4f4f4;
-  color: set-text-color(#f4f4f4); }
+  color: #000; }
   .button-b:hover {
     text-decoration: none;
     background-color: orange;
-    color: set-text-color(orange); }
+    color: #fff; }
 
 .kkk {
   color: purple; }
