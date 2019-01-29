@@ -162,7 +162,7 @@ article p a:visited {
 .header .flex-end button:hover {
   background-color: white;
   background-color: #7d1900;
-  color: #000;
+  color: set-text-color(#fff);
   border: 1px solid red;
 }
 
