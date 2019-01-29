@@ -1,8 +1,10 @@
-@import "./partials/variables";
-@import "./partials/base";
-@import "./partials/layouts";
-@import "./partials/functions";
-
+@import "./variables";
+@import "./1-base/base-dir";
+@import "./2-layouts/layouts-dir";
+@import "./3-components/components-dir";
+@import "./4-pages/pages-dir";
+@import "./5-vendors/vendors-dir";
+@import "./6-abstracts/abstract-dir";
 
 #wrapper {
   background: $white;
