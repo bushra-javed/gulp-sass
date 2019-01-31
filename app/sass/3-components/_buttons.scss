@@ -1,0 +1,25 @@
+
+.button {
+    font-size: $button-font;
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+    padding: .8em 1.2em;
+    background-color: $color-secondary;
+    border-radius: .19em;
+    transition: all ease-in-out 300ms;
+    text-decoration: none;
+    color: set-text-color($color-secondary);
+    
+
+    &:active,
+    &:hover {
+        background-color: darken($color-secondary,10%);
+
+        box-shadow: 2px 2px 2px 1px #fff;
+        color: set-text-color($color-secondary);
+        font-weight: 400;
+    }
+}
+
+
