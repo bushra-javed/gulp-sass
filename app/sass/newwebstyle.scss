@@ -1,4 +1,5 @@
 @import "./variables";
+@import "./0-plugins/plugins-dir";
 @import "./1-base/base-dir";
 @import "./6-abstracts/abstract-dir";
 @import "./2-layouts/layouts-dir";
@@ -7,6 +8,7 @@
 @import "./5-vendors/vendors-dir";
 $color-for-list1:red;
 $color-for-list2:yellow;
+
 
 .flex-wrapper {
   display: flex;
@@ -164,7 +166,7 @@ section#section-0 {
 
     .bg-image {
       // @extend .banner-bgimage;
-      background: url("../images/hero.jpg") no-repeat center; // 
+      background: url("../images/building3.jpg") no-repeat center; // 
       height: 100vh;
       // border: 11px solid red;
       background-size: cover;
@@ -175,7 +177,8 @@ section#section-0 {
 
         .content {
           @extend .banner-text; // margin-left: 30px;
-          color: #fff;
+
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
           button {
             margin-top: 4rem;
@@ -292,17 +295,18 @@ section#section-3 {
 
     .left1 {
       padding: 40px 0;
+      text-align: center;
 
       // margin-right: -230px;
       img {
         width: 300px;
         height: 300px;
-        border-radius: 50%;
+        // border-radius: 50%;
       }
     }
 
     .right1 {
-      padding: 40px 40px;
+      padding: 40px 90px;
       text-align: left;
 
 
@@ -311,10 +315,12 @@ section#section-3 {
       }
 
       p {
+        padding-top: 20px;
         color: $color-dark;
       }
 
       span {
+        padding-top: 20px;
 
         strong {
           color: $color-light;
@@ -324,7 +330,7 @@ section#section-3 {
       button {
         margin-top: 40px;
         @extend .button;
-        background-color: $color-primary;
+        background-color: $color-secondary;
       }
     }
 
@@ -337,43 +343,55 @@ section#section-3 {
 section#section-4 {
   .section-4 {
     // background-color: $color-secondary;
-// border: 11px solid red;
+    // border: 11px solid red;
+    text-align: center;
 
     .bg-image {
+      padding: $padding-section;
       background-image: url("../images/bannerblue.jpg");
       height: 100%;
-      
+
       .bg-color {
         h1 {
+          // @include hide-text;
+          font-family: sans-serif;
           color: $color-primary;
         }
-        
+
+
         span {
           color: $white;
         }
-        
-        .left1 {
-          
+
+        .left1,
+        .both-side {
           // border: 1px solid red;
-          // padding-top: 30px;
+          padding-top: 30px;
+
+          h5 {
+            padding: 20px;
+            color: #fff;
+          }
+          P{
+            padding:0 40px;
+          }
+
           img {
-            
-            height: 300px;
+
+            height: 350px;
             width: 90%;
-            
             border: 6px solid #fff;
           }
         }
-        
-        
+
+
         .right1 {
+          padding-top: 30px;
+
           img {
-            
-            height: 300px;
-            
-            // height: 400px;
-            width: 90%;
-            
+
+            @include size(90%, 350px);
+
             border: 6px solid #fff;
           }
         }
@@ -392,19 +410,20 @@ section#section-5 {
   .section-5 {
     background-color: $color-primary;
 
-    
-
     .left1 {
-      padding: 40px 40px;
-      text-align: left;
-
-
+       padding: 40px;
+      // border: 1px solid red;
+      
+      
       h3 {
         color: $color-secondary;
       }
-
+      
       p {
         color: $color-dark;
+        text-align: left;
+font-family:Arial;
+line-height: 1.5em;
       }
 
       span {
@@ -414,26 +433,28 @@ section#section-5 {
         }
       }
 
-      button {
-        margin-top: 40px;
-        @extend .button;
-        background-color: $color-dark;
+      div{
+        text-align: center;
+        button {
+          margin: 0 auto;
+          @extend .button;
+          background-color: $color-dark;
+        }
+
       }
     }
 
 
     .right1 {
-      // box-sizing: border-box;
-      padding: 40px 0;
+padding: 100px;
+      // border: 1px solid red;
 
-      // margin-right: -230px;
-      
+
       img {
+padding-left: 40px;
         
-      margin-left: 30px;
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
+        width: 100px;
+        height: 100px;
       }
 
     }
@@ -463,12 +484,13 @@ section#section-6 {
 
     .left1 {
       padding: 40px 0;
+      text-align: center;
 
       // margin-right: -230px;
       img {
         width: 300px;
         height: 300px;
-        border-radius: 50%;
+        //    border-radius: 50%;
       }
     }
 
@@ -478,18 +500,19 @@ section#section-6 {
 
 
       h3 {
+        line-height: 1;
         color: $color-secondary;
       }
 
       p {
+        padding-top: 10px;
         color: $color-dark;
       }
 
       span {
 
-        strong {
-          color: $color-light;
-        }
+        color: $color-dark;
+
       }
 
       button {
@@ -508,21 +531,46 @@ section#section-6 {
 section#section-7 {
   // margin-top: -40px;
   background-color: #c3d4f2;
-  
+
   .section-7 {
+
+    .container{
+      color:$color-dark;
+      text-align: center;
+      h3{
+      }
+    
+    }
+    
+    
     img {
       height: 100px;
       width: 100%;
     }
     
-    .col{
-      margin-top: -30px;
-      padding: 40px;
-      img {
-        // margin-top: -30px;
-        height: 100px;
-        width: 100px;
-      } 
+    .wrapper {
+      margin: $padding-section;
+      // margin-top: -30px;
+      width: 90%;
+      margin: auto;
+color: $color-dark;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content:center;
+      // padding: 40px;
+      text-align: center;
+
+      // padding: 50px 0;
+
+      div{
+margin-left: 30px;
+        img {
+          // margin-top: -30px;
+          height: 100px;
+          width: 100px;
+        }
+      }
     }
 
 
@@ -530,79 +578,51 @@ section#section-7 {
 }
 
 
-@media screen and (max-width:576px) {
 
-  // html{
-  //     font-size: 16px;
-  section#section-4 {
 
-    .section-4 {
-      p {
 
-        color: red;
-      }
-
-      .bg-image {
-        // background-image: url("../images/bannerblue-mob.jpg");
-
-      }
+section#section-8 {
+  .section-8 {
+    %dotted-box {
+      border: 2px dotted $color-light;
+      margin: 10px 0;
     }
-  }
 
-  //         }
-  :root {
-    font-size: 16px;
-  }
+    margin: $margin-section;
+    #riddle {
+      @extend %dotted-box;
+      padding: 20px;
+      background-color:$color-light;
+      @include border-radius(15px);
+      height: 100%;
 
+    }
+
+
+    #riddle-answer {
+      @extend #riddle;
+      @extend %dotted-box;
+      @include border-radius(15px);
+      //   @include box-shadow(5px 5px 5px 2px $gray);
+height: 100%;
+    }
+
+
+  }
 }
+
+
+
+
 
 footer {
-  clear: both;
-  background: #00647D;
-  color: #FFF;
+
+.footer{
+
+  
+   @include linear-gradient($color-secondary,$color-dark);
+  color: set-text-color(#000);
   text-align: center;
   padding: 10px;
 }
-
-#riddle {
-  padding: 20px;
-  background-color: $alice-blue;
 }
-
-%dotted-box {
-  border: 2px dotted $duke-blue;
-  margin: 10px 0;
-}
-
-#riddle-answer {
-  @extend #riddle; // @extend %dotted-box ;
-  // @include border-radius(5px);
-  // @include box-shadow(5px 5px 5px 2px $gray);
-  margin-top: 10px;
-}
-
-#main-title {
-  // @include text-shadow(5px 5px 5px rgba($blue,.2));
-}
-
-%main-green-gradient {
-  //  @include background-image(linear-gradient(left,$main-green 60%, $color-for-list2,$red,$yellow));
-}
-
-footer {
-  // @extend %main-green-gradient;
-}
-
-// @import "compass/utilities/sprites";
-// @import "/images/icons/*.png";
-// // @include all-icons-sprites;
-// .icons {
-//   .clock { @include icons-sprite(clock);}
-//   .clock { @include icons-sprite(clock);}
-//   .clock { @include icons-sprite(clock);}
-//   .clock { @include icons-sprite(clock);}
-// }
-// .icons *{
-//   height: 64px;
-//   width: 64px;
-// }

@@ -11,7 +11,29 @@
     border-radius: 50%;
     color: #fff;
     text-align: center;
+    
+    // &:hover{
+
+    //     @include animation(wow, 0.5,$ease-in-out-quint,1);
+    // }
 }
+
+// @include keyframes(wow){
+//     0%{
+// @include transform(scale(1));
+//     }
+//     50%{
+//         @include transform(scale(2));
+
+//     }
+//     100%{
+//         @include transform(scale(1));
+
+//     }
+// }
+
+
+
 
 
 .rectangle-with-traingle {
@@ -48,3 +70,5 @@
     display: block;
     height: 5px;
 }
+
+

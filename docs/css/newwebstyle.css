@@ -2,21 +2,14 @@
   font-size: 20px; }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
-  background: #808080;
   line-height: 1em;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  color: #fff; }
 
 section {
   margin: 0;
   padding: 0; }
-
-body {
-  background-color: #fff;
-  font-family: "Arial";
-  text-align: center;
-  color: black; }
 
 .container-fluid {
   padding: 0; }
@@ -39,6 +32,8 @@ article p a {
 
 .navbar-custom {
   padding: 0;
+  font-family: "arial";
+  font-weight: 600;
   background-color: #fff;
   box-shadow: 1px 3px 2px #444444; }
   .navbar-custom .navbar-brand img {
@@ -91,7 +86,7 @@ article p a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: #fff;
   text-transform: uppercase;
   margin: 0;
   font-size: 3rem;
@@ -104,7 +99,9 @@ article p a {
 .section-padding {
   padding: 30px 0; }
 
-.button, section#section-0 .section-0 .bg-image .bg-color .content button, section#section-3 .section-3 .right1 button, section#section-5 .section-5 .left1 button, section#section-6 .section-6 .right1 button {
+.button, section#section-0 .section-0 .bg-image .bg-color .content button, section#section-3 .section-3 .right1 button, section#section-5 .section-5 .left1 div button, section#section-6 .section-6 .right1 button {
+  outline: none;
+  border: 1px solid transparent;
   font-size: 1rem;
   text-transform: uppercase;
   text-align: center;
@@ -114,12 +111,16 @@ article p a {
   border-radius: .19em;
   transition: all ease-in-out 300ms;
   text-decoration: none;
-  color: #fff; }
-  .button:active, section#section-0 .section-0 .bg-image .bg-color .content button:active, section#section-3 .section-3 .right1 button:active, section#section-5 .section-5 .left1 button:active, section#section-6 .section-6 .right1 button:active, .button:hover, section#section-0 .section-0 .bg-image .bg-color .content button:hover, section#section-3 .section-3 .right1 button:hover, section#section-5 .section-5 .left1 button:hover, section#section-6 .section-6 .right1 button:hover {
+  color: #fff;
+  font-family: sans-serif; }
+  .button:hover, section#section-0 .section-0 .bg-image .bg-color .content button:hover, section#section-3 .section-3 .right1 button:hover, section#section-5 .section-5 .left1 div button:hover, section#section-6 .section-6 .right1 button:hover {
     background-color: #025482;
-    box-shadow: 2px 2px 2px 1px #fff;
-    color: #fff;
-    font-weight: 400; }
+    box-shadow: -2px 2px 0 #fff;
+    color: #fff; }
+  .button:active, section#section-0 .section-0 .bg-image .bg-color .content button:active, section#section-3 .section-3 .right1 button:active, section#section-5 .section-5 .left1 div button:active, section#section-6 .section-6 .right1 button:active {
+    position: relative;
+    top: 2px;
+    left: -2px; }
 
 .circle-for-icon {
   width: 6vmin;
@@ -165,10 +166,6 @@ article p a {
   height: 5px; }
 
 @media screen and (max-width: 576px) {
-  .section-4 p {
-    color: red; }
-  .section-4 .bg-image {
-    background-image: url("/doc/images/bannerblue-mob.jpg"); }
   :root {
     font-size: 16px; } }
 
@@ -177,8 +174,6 @@ article p a {
     font-size: 19px; } }
 
 @media screen and (min-width: 1000px) {
-  .section-4 p {
-    color: green; }
   :root {
     font-size: 21px; } }
 
@@ -280,13 +275,13 @@ section#section-1 {
 section#section-0 .section-0 {
   position: relative; }
   section#section-0 .section-0 .bg-image {
-    background: url("../images/hero.jpg") no-repeat center;
+    background: url("../images/building3.jpg") no-repeat center;
     height: 100vh;
     background-size: cover; }
     section#section-0 .section-0 .bg-image .bg-color {
       height: 100vh; }
       section#section-0 .section-0 .bg-image .bg-color .content {
-        color: #fff; }
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
         section#section-0 .section-0 .bg-image .bg-color .content button {
           margin-top: 4rem; }
 
@@ -380,61 +375,84 @@ section#section-3 {
     height: 100px;
     width: 100%; }
   section#section-3 .section-3 .left1 {
-    padding: 40px 0; }
+    padding: 40px 0;
+    text-align: center; }
     section#section-3 .section-3 .left1 img {
       width: 300px;
-      height: 300px;
-      border-radius: 50%; }
+      height: 300px; }
   section#section-3 .section-3 .right1 {
-    padding: 40px 40px;
+    padding: 40px 90px;
     text-align: left; }
     section#section-3 .section-3 .right1 h3 {
       color: #0375b4; }
     section#section-3 .section-3 .right1 p {
+      padding-top: 20px;
       color: #262228; }
-    section#section-3 .section-3 .right1 span strong {
-      color: #007849; }
+    section#section-3 .section-3 .right1 span {
+      padding-top: 20px; }
+      section#section-3 .section-3 .right1 span strong {
+        color: #007849; }
     section#section-3 .section-3 .right1 button {
       margin-top: 40px;
-      background-color: #ffce00; }
+      background-color: #0375b4; }
 
-section#section-4 .section-4 .bg-image {
-  background-image: url("../images/bannerblue.jpg");
-  height: 100%; }
-  section#section-4 .section-4 .bg-image .bg-color h1 {
-    color: #ffce00; }
-  section#section-4 .section-4 .bg-image .bg-color span {
-    color: #FFFFFF; }
-  section#section-4 .section-4 .bg-image .bg-color .left1 img {
-    height: 300px;
-    width: 90%;
-    border: 6px solid #fff; }
-  section#section-4 .section-4 .bg-image .bg-color .right1 img {
-    height: 300px;
-    width: 90%;
-    border: 6px solid #fff; }
+section#section-4 .section-4 {
+  text-align: center; }
+  section#section-4 .section-4 .bg-image {
+    padding: 2rem;
+    background-image: url("../images/bannerblue.jpg");
+    height: 100%; }
+    section#section-4 .section-4 .bg-image .bg-color h1 {
+      font-family: sans-serif;
+      color: #ffce00; }
+    section#section-4 .section-4 .bg-image .bg-color span {
+      color: #FFFFFF; }
+    section#section-4 .section-4 .bg-image .bg-color .left1,
+    section#section-4 .section-4 .bg-image .bg-color .both-side {
+      padding-top: 30px; }
+      section#section-4 .section-4 .bg-image .bg-color .left1 h5,
+      section#section-4 .section-4 .bg-image .bg-color .both-side h5 {
+        padding: 20px;
+        color: #fff; }
+      section#section-4 .section-4 .bg-image .bg-color .left1 P,
+      section#section-4 .section-4 .bg-image .bg-color .both-side P {
+        padding: 0 40px; }
+      section#section-4 .section-4 .bg-image .bg-color .left1 img,
+      section#section-4 .section-4 .bg-image .bg-color .both-side img {
+        height: 350px;
+        width: 90%;
+        border: 6px solid #fff; }
+    section#section-4 .section-4 .bg-image .bg-color .right1 {
+      padding-top: 30px; }
+      section#section-4 .section-4 .bg-image .bg-color .right1 img {
+        height: 350px;
+        width: 90%;
+        border: 6px solid #fff; }
 
 section#section-5 .section-5 {
   background-color: #ffce00; }
   section#section-5 .section-5 .left1 {
-    padding: 40px 40px;
-    text-align: left; }
+    padding: 40px; }
     section#section-5 .section-5 .left1 h3 {
       color: #0375b4; }
     section#section-5 .section-5 .left1 p {
-      color: #262228; }
+      color: #262228;
+      text-align: left;
+      font-family: Arial;
+      line-height: 1.5em; }
     section#section-5 .section-5 .left1 span strong {
       color: #007849; }
-    section#section-5 .section-5 .left1 button {
-      margin-top: 40px;
-      background-color: #262228; }
+    section#section-5 .section-5 .left1 div {
+      text-align: center; }
+      section#section-5 .section-5 .left1 div button {
+        margin: 0 auto;
+        background-color: #262228; }
   section#section-5 .section-5 .right1 {
-    padding: 40px 0; }
+    padding: 100px; }
     section#section-5 .section-5 .right1 img {
-      margin-left: 30px;
-      width: 150px;
-      height: 150px;
-      border-radius: 50%; }
+      padding-left: 40px;
+      width: 100px;
+      height: 100px; }
 
 section#section-5 img {
   height: 100px;
@@ -445,53 +463,71 @@ section#section-6 .section-6 img {
   width: 100%; }
 
 section#section-6 .section-6 .left1 {
-  padding: 40px 0; }
+  padding: 40px 0;
+  text-align: center; }
   section#section-6 .section-6 .left1 img {
     width: 300px;
-    height: 300px;
-    border-radius: 50%; }
+    height: 300px; }
 
 section#section-6 .section-6 .right1 {
   padding: 40px 40px;
   text-align: left; }
   section#section-6 .section-6 .right1 h3 {
+    line-height: 1;
     color: #0375b4; }
   section#section-6 .section-6 .right1 p {
+    padding-top: 10px;
     color: #262228; }
-  section#section-6 .section-6 .right1 span strong {
-    color: #007849; }
+  section#section-6 .section-6 .right1 span {
+    color: #262228; }
   section#section-6 .section-6 .right1 button {
     margin-top: 40px;
     background-color: #ffce00; }
 
 section#section-7 {
   background-color: #c3d4f2; }
+  section#section-7 .section-7 .container {
+    color: #262228;
+    text-align: center; }
   section#section-7 .section-7 img {
     height: 100px;
     width: 100%; }
-  section#section-7 .section-7 .col {
-    margin-top: -30px;
-    padding: 40px; }
-    section#section-7 .section-7 .col img {
-      height: 100px;
-      width: 100px; }
+  section#section-7 .section-7 .wrapper {
+    margin: 2rem;
+    width: 90%;
+    margin: auto;
+    color: #262228;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+    section#section-7 .section-7 .wrapper div {
+      margin-left: 30px; }
+      section#section-7 .section-7 .wrapper div img {
+        height: 100px;
+        width: 100px; }
 
-@media screen and (max-width: 576px) {
-  section#section-4 .section-4 p {
-    color: red; }
-  :root {
-    font-size: 16px; } }
+section#section-8 .section-8 {
+  margin: 2rem auto; }
+  section#section-8 .section-8 #riddle, section#section-8 .section-8 #riddle-answer {
+    border: 2px dotted #007849;
+    margin: 10px 0; }
+  section#section-8 .section-8 #riddle, section#section-8 .section-8 #riddle-answer {
+    padding: 20px;
+    background-color: #007849;
+    border-radius: 15px;
+    height: 100%; }
+  section#section-8 .section-8 #riddle-answer {
+    border-radius: 15px;
+    height: 100%; }
 
-footer {
-  clear: both;
-  background: #00647D;
-  color: #FFF;
+footer .footer {
+  background: #036;
+  background: -webkit-linear-gradient(#0375b4, #262228);
+  background: -o-linear-gradient(#0375b4, #262228);
+  background: -moz-linear-gradient(#0375b4, #262228);
+  background: linear-gradient(#0375b4, #262228);
+  color: #fff;
   text-align: center;
   padding: 10px; }
-
-#riddle, #riddle-answer {
-  padding: 20px;
-  background-color: #F0F8FF; }
-
-#riddle-answer {
-  margin-top: 10px; }

@@ -2,21 +2,14 @@
   font-size: 20px; }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
-  background: #808080;
   line-height: 1em;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  color: #fff; }
 
 section {
   margin: 0;
   padding: 0; }
-
-body {
-  background-color: #fff;
-  font-family: "Arial";
-  text-align: center;
-  color: black; }
 
 .container-fluid {
   padding: 0; }
@@ -39,6 +32,8 @@ article p a {
 
 .navbar-custom {
   padding: 0;
+  font-family: "arial";
+  font-weight: 600;
   background-color: #fff;
   box-shadow: 1px 3px 2px #444444; }
   .navbar-custom .navbar-brand img {
@@ -91,7 +86,7 @@ article p a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: #fff;
   text-transform: uppercase;
   margin: 0;
   font-size: 3rem;
@@ -105,6 +100,8 @@ article p a {
   padding: 30px 0; }
 
 .button, .button-a, .button-b {
+  outline: none;
+  border: 1px solid transparent;
   font-size: 1rem;
   text-transform: uppercase;
   text-align: center;
@@ -114,12 +111,16 @@ article p a {
   border-radius: .19em;
   transition: all ease-in-out 300ms;
   text-decoration: none;
-  color: set-text-color(#0375b4); }
-  .button:active, .button-a:active, .button-b:active, .button:hover, .button-a:hover, .button-b:hover {
+  color: set-text-color(#0375b4);
+  font-family: sans-serif; }
+  .button:hover, .button-a:hover, .button-b:hover {
     background-color: #025482;
-    box-shadow: 2px 2px 2px 1px #fff;
-    color: set-text-color(#0375b4);
-    font-weight: 400; }
+    box-shadow: -2px 2px 0 #fff;
+    color: set-text-color(#0375b4); }
+  .button:active, .button-a:active, .button-b:active {
+    position: relative;
+    top: 2px;
+    left: -2px; }
 
 .circle-for-icon {
   width: 6vmin;
@@ -165,10 +166,6 @@ article p a {
   height: 5px; }
 
 @media screen and (max-width: 576px) {
-  .section-4 p {
-    color: red; }
-  .section-4 .bg-image {
-    background-image: url("/doc/images/bannerblue-mob.jpg"); }
   :root {
     font-size: 16px; } }
 
@@ -177,8 +174,6 @@ article p a {
     font-size: 19px; } }
 
 @media screen and (min-width: 1000px) {
-  .section-4 p {
-    color: green; }
   :root {
     font-size: 21px; } }
 
