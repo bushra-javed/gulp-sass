@@ -613,6 +613,45 @@ height: 100%;
 
 
 
+///////////////////////@extend
+
+
+section#section-9 {
+  .section-9 {
+
+    .col{
+      h2{
+
+        text-align: center;
+      }
+    }
+    background-color: $color-dark;
+    padding: $padding-section;
+
+    margin: $margin-section;
+    .box-component {
+      background-color:$color-light;
+      padding: 20px;
+       height: 100px;
+      @include border-radius(15px);
+      @extend .rectangle-with-traingle ;
+
+    }
+img{
+  position: relative;
+  top:-10px;
+  left: 20px;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+    
+
+  }
+}
+
+
 
 
 footer {

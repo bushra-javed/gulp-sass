@@ -134,9 +134,9 @@ article p a {
   color: #fff;
   text-align: center; }
 
-.rectangle-with-traingle {
+.rectangle-with-traingle, section#section-9 .section-9 .box-component {
   margin-left: 140px;
-  background: #fff;
+  background: #ffce00;
   padding: 14px 24px;
   margin-bottom: 20px;
   box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.18);
@@ -144,7 +144,7 @@ article p a {
   width: 200px;
   height: 400px; }
 
-.rectangle-with-traingle::after {
+.rectangle-with-traingle::after, section#section-9 .section-9 .box-component::after {
   content: "";
   position: absolute;
   width: 0;
@@ -521,6 +521,25 @@ section#section-8 .section-8 {
   section#section-8 .section-8 #riddle-answer {
     border-radius: 15px;
     height: 100%; }
+
+section#section-9 .section-9 {
+  background-color: #262228;
+  padding: 2rem;
+  margin: 2rem auto; }
+  section#section-9 .section-9 .col h2 {
+    text-align: center; }
+  section#section-9 .section-9 .box-component {
+    background-color: #007849;
+    padding: 20px;
+    height: 100px;
+    border-radius: 15px; }
+  section#section-9 .section-9 img {
+    position: relative;
+    top: -10px;
+    left: 20px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%; }
 
 footer .footer {
   background: #036;
