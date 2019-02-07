@@ -294,19 +294,19 @@ section#section-3 {
     }
 
     .left1 {
-      padding: 40px 0;
+      padding: 2rem 0;
       text-align: center;
 
       // margin-right: -230px;
       img {
-        width: 300px;
-        height: 300px;
+        width: 18rem;
+        height: 18rem;
         // border-radius: 50%;
       }
     }
 
     .right1 {
-      padding: 40px 90px;
+      padding: 2rem 3rem;
       text-align: left;
 
 
@@ -369,11 +369,11 @@ section#section-4 {
           padding-top: 30px;
 
           h5 {
-            padding: 20px;
+            padding: 1rem;
             color: #fff;
           }
           P{
-            padding:0 40px;
+            padding:0 2rem;
           }
 
           img {
@@ -588,25 +588,20 @@ section#section-8 {
   .section-8 {
     %dotted-box {
       border: 2px dotted $color-light;
-      margin: 10px 0;
+      margin: 1rem 1rem;
     }
-
     margin: $margin-section;
     #riddle {
       @extend %dotted-box;
-      padding: 20px;
+      padding: 1rem;
       background-color:$color-light;
       @include border-radius(15px);
       height: 100%;
-
     }
-
-
     #riddle-answer {
       @extend #riddle;
       @extend %dotted-box;
       @include border-radius(15px);
-      //   @include box-shadow(5px 5px 5px 2px $gray);
 height: 100%;
     }
 

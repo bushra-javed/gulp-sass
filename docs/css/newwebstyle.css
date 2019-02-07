@@ -375,13 +375,13 @@ section#section-3 {
     height: 100px;
     width: 100%; }
   section#section-3 .section-3 .left1 {
-    padding: 40px 0;
+    padding: 2rem 0;
     text-align: center; }
     section#section-3 .section-3 .left1 img {
-      width: 300px;
-      height: 300px; }
+      width: 18rem;
+      height: 18rem; }
   section#section-3 .section-3 .right1 {
-    padding: 40px 90px;
+    padding: 2rem 3rem;
     text-align: left; }
     section#section-3 .section-3 .right1 h3 {
       color: #0375b4; }
@@ -412,11 +412,11 @@ section#section-4 .section-4 {
       padding-top: 30px; }
       section#section-4 .section-4 .bg-image .bg-color .left1 h5,
       section#section-4 .section-4 .bg-image .bg-color .both-side h5 {
-        padding: 20px;
+        padding: 1rem;
         color: #fff; }
       section#section-4 .section-4 .bg-image .bg-color .left1 P,
       section#section-4 .section-4 .bg-image .bg-color .both-side P {
-        padding: 0 40px; }
+        padding: 0 2rem; }
       section#section-4 .section-4 .bg-image .bg-color .left1 img,
       section#section-4 .section-4 .bg-image .bg-color .both-side img {
         height: 18rem;
@@ -517,9 +517,9 @@ section#section-8 .section-8 {
   margin: 2rem auto; }
   section#section-8 .section-8 #riddle, section#section-8 .section-8 #riddle-answer {
     border: 2px dotted #007849;
-    margin: 10px 0; }
+    margin: 1rem 1rem; }
   section#section-8 .section-8 #riddle, section#section-8 .section-8 #riddle-answer {
-    padding: 20px;
+    padding: 1rem;
     background-color: #007849;
     border-radius: 15px;
     height: 100%; }
