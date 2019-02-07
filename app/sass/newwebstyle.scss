@@ -348,19 +348,22 @@ section#section-4 {
 
     .bg-image {
       padding: $padding-section;
-      background-image: url("../images/bannerblue.jpg");
+      // background-color: lighten($color-secondary, 50%);
+//      background-image: url("../images/bannerblue.jpg");
       height: 100%;
-
+      color: $color-primary;  
+      color:set-text-color(#fff);
+      
       .bg-color {
         h1 {
           // @include hide-text;
           font-family: sans-serif;
-          color: $color-primary;
         }
-
-
+        
+        
         span {
-          color: $white;
+      color:set-text-color(#fff);
+
         }
 
         .left1,
@@ -370,10 +373,10 @@ section#section-4 {
 
           h5 {
             padding: 1rem;
-            color: #fff;
           }
-          P{
-            padding:0 2rem;
+
+          P {
+            padding: 0 2rem;
           }
 
           img {
@@ -411,19 +414,19 @@ section#section-5 {
     background-color: $color-primary;
 
     .left1 {
-       padding: 40px;
+      padding: 40px;
       // border: 1px solid red;
-      
-      
+
+
       h3 {
         color: $color-secondary;
       }
-      
+
       p {
         color: $color-dark;
         text-align: left;
-font-family:Arial;
-line-height: 1.5em;
+        font-family: Arial;
+        line-height: 1.5em;
       }
 
       span {
@@ -433,8 +436,9 @@ line-height: 1.5em;
         }
       }
 
-      div{
+      div {
         text-align: center;
+
         button {
           margin: 0 auto;
           @extend .button;
@@ -446,16 +450,16 @@ line-height: 1.5em;
 
 
     .right1 {
-// padding: 100px;
-margin: 5rem auto;
-text-align: center;
-line-height: 100%;
+      // padding: 100px;
+      margin: 5rem auto;
+      text-align: center;
+      line-height: 100%;
       // border: 1px solid red;
 
 
       img {
-padding-left: 40px;
-        
+        padding-left: 40px;
+
         width: 100px;
         height: 100px;
       }
@@ -488,12 +492,13 @@ section#section-6 {
     .left1 {
       padding: 40px 0;
       text-align: center;
+
       img {
         width: 14rem;
         height: 14rem;
       }
     }
-    
+
     .right1 {
       padding: 40px 40px;
       text-align: left;
@@ -537,37 +542,38 @@ section#section-7 {
 
   .section-7 {
 
-    .container{
-      color:$color-dark;
+    .container {
+      color: $color-dark;
       text-align: center;
-      h3{
-      }
-    
+
+      h3 {}
+
     }
-    
-    
+
+
     img {
       height: 100px;
       width: 100%;
     }
-    
+
     .wrapper {
       margin: $padding-section;
       // margin-top: -30px;
       width: 90%;
       margin: auto;
-color: $color-dark;
+      color: $color-dark;
       height: 300px;
       display: flex;
       align-items: center;
-      justify-content:center;
+      justify-content: center;
       // padding: 40px;
       text-align: center;
 
       // padding: 50px 0;
 
-      div{
-margin-left: 30px;
+      div {
+        margin-left: 30px;
+
         img {
           // margin-top: -30px;
           height: 100px;
@@ -579,11 +585,6 @@ margin-left: 30px;
 
   }
 }
-
-
-
-
-
 section#section-8 {
   .section-8 {
     %dotted-box {
@@ -594,7 +595,7 @@ section#section-8 {
     #riddle {
       @extend %dotted-box;
       padding: 1rem;
-      background-color:$color-light;
+      background-color: $color-light;
       @include border-radius(15px);
       height: 100%;
     }
@@ -602,7 +603,7 @@ section#section-8 {
       @extend #riddle;
       @extend %dotted-box;
       @include border-radius(15px);
-height: 100%;
+      height: 100%;
     }
 
 
@@ -617,34 +618,37 @@ height: 100%;
 section#section-9 {
   .section-9 {
 
-    .col{
-      h2{
+    .col {
+      h2 {
 
         text-align: center;
       }
     }
+
     background-color: $color-dark;
     padding: $padding-section;
 
     margin: $margin-section;
+
     .box-component {
-      background-color:$color-light;
+      background-color: $color-light;
       padding: 20px;
-       height: 100px;
+      height: 100px;
       @include border-radius(15px);
-      @extend .rectangle-with-traingle ;
+      @extend .rectangle-with-traingle;
 
     }
-img{
-  position: relative;
-  top:-10px;
-  left: 20px;
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-}
 
-    
+    img {
+      position: relative;
+      top: -10px;
+      left: 20px;
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+    }
+
+
 
   }
 }
@@ -654,12 +658,12 @@ img{
 
 footer {
 
-.footer{
+  .footer {
 
-  
-   @include linear-gradient($color-secondary,$color-dark);
-  color: set-text-color(#000);
-  text-align: center;
-  padding: 10px;
-}
+
+    @include linear-gradient($color-secondary, $color-dark);
+    color: set-text-color(#000);
+    text-align: center;
+    padding: 10px;
+  }
 }
