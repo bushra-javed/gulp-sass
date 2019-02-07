@@ -167,13 +167,13 @@ section#section-0 {
     .bg-image {
       // @extend .banner-bgimage;
       background: url("../images/building3.jpg") no-repeat center; // 
-      height: 100vh;
+      height: 33rem;
       // border: 11px solid red;
       background-size: cover;
 
       .bg-color {
         @extend .banner-bgcolor;
-        height: 100vh;
+        height: 33rem;
 
         .content {
           @extend .banner-text; // margin-left: 30px;
@@ -243,7 +243,7 @@ section#section-2 {
 
     #box-1 {
 
-      height: 350px;
+      height: 18rem;
       @include box(2px,
       #444,
       $color-primary,
@@ -252,7 +252,7 @@ section#section-2 {
     }
 
     #box-2 {
-      height: 350px;
+      height: 18rem;
       @include box(2px,
       #444,
       $color-secondary,
@@ -262,7 +262,7 @@ section#section-2 {
     }
 
     #box-3 {
-      height: 325px;
+      height: 18rem;
 
       @include box(2px,
       #444,
@@ -272,7 +272,7 @@ section#section-2 {
     }
 
     #box-4 {
-      height: 325px;
+      height: 18rem;
       @include box(2px,
       #444,
       $color-primary,
@@ -378,7 +378,7 @@ section#section-4 {
 
           img {
 
-            height: 350px;
+            height: 18rem;
             width: 90%;
             border: 6px solid #fff;
           }
@@ -390,7 +390,7 @@ section#section-4 {
 
           img {
 
-            @include size(90%, 350px);
+            @include size(90%, 18rem);
 
             border: 6px solid #fff;
           }
@@ -446,7 +446,10 @@ line-height: 1.5em;
 
 
     .right1 {
-padding: 100px;
+// padding: 100px;
+margin: 5rem auto;
+text-align: center;
+line-height: 100%;
       // border: 1px solid red;
 
 
@@ -463,7 +466,7 @@ padding-left: 40px;
   }
 
   img {
-    height: 100px;
+    height: 50px;
     width: 100%;
   }
 }
@@ -485,26 +488,26 @@ section#section-6 {
     .left1 {
       padding: 40px 0;
       text-align: center;
-
-      // margin-right: -230px;
       img {
-        width: 300px;
-        height: 300px;
-        //    border-radius: 50%;
+        width: 14rem;
+        height: 14rem;
       }
     }
-
+    
     .right1 {
       padding: 40px 40px;
       text-align: left;
-
+      text-align: center;
 
       h3 {
+        text-align: left;
+
         line-height: 1;
         color: $color-secondary;
       }
 
       p {
+        text-align: left;
         padding-top: 10px;
         color: $color-dark;
       }

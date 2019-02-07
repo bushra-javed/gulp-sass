@@ -167,7 +167,7 @@ article p a {
 
 @media screen and (max-width: 576px) {
   :root {
-    font-size: 16px; } }
+    font-size: 12px; } }
 
 @media screen and (min-width: 720px) {
   :root {
@@ -276,10 +276,10 @@ section#section-0 .section-0 {
   position: relative; }
   section#section-0 .section-0 .bg-image {
     background: url("../images/building3.jpg") no-repeat center;
-    height: 100vh;
+    height: 33rem;
     background-size: cover; }
     section#section-0 .section-0 .bg-image .bg-color {
-      height: 100vh; }
+      height: 33rem; }
       section#section-0 .section-0 .bg-image .bg-color .content {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
         section#section-0 .section-0 .bg-image .bg-color .content button {
@@ -316,7 +316,7 @@ section#section-2 {
           padding: 0;
           color: #fff; }
     section#section-2 .section-2 #box-1 {
-      height: 350px;
+      height: 18rem;
       -webkit-border-radius: 2px;
       -moz-border-radius: 2px;
       border-radius: 2px;
@@ -329,7 +329,7 @@ section#section-2 {
       background: -moz-linear-gradient(#ffce00, #0375b4);
       background: linear-gradient(#ffce00, #0375b4); }
     section#section-2 .section-2 #box-2 {
-      height: 350px;
+      height: 18rem;
       -webkit-border-radius: 2px;
       -moz-border-radius: 2px;
       border-radius: 2px;
@@ -342,7 +342,7 @@ section#section-2 {
       background: -moz-linear-gradient(#0375b4, #0375b4);
       background: linear-gradient(#0375b4, #0375b4); }
     section#section-2 .section-2 #box-3 {
-      height: 325px;
+      height: 18rem;
       -webkit-border-radius: 2px;
       -moz-border-radius: 2px;
       border-radius: 2px;
@@ -355,7 +355,7 @@ section#section-2 {
       background: -moz-linear-gradient(#ffce00, #444);
       background: linear-gradient(#ffce00, #444); }
     section#section-2 .section-2 #box-4 {
-      height: 325px;
+      height: 18rem;
       -webkit-border-radius: 2px;
       -moz-border-radius: 2px;
       border-radius: 2px;
@@ -419,13 +419,13 @@ section#section-4 .section-4 {
         padding: 0 40px; }
       section#section-4 .section-4 .bg-image .bg-color .left1 img,
       section#section-4 .section-4 .bg-image .bg-color .both-side img {
-        height: 350px;
+        height: 18rem;
         width: 90%;
         border: 6px solid #fff; }
     section#section-4 .section-4 .bg-image .bg-color .right1 {
       padding-top: 30px; }
       section#section-4 .section-4 .bg-image .bg-color .right1 img {
-        height: 350px;
+        height: 18rem;
         width: 90%;
         border: 6px solid #fff; }
 
@@ -448,14 +448,16 @@ section#section-5 .section-5 {
         margin: 0 auto;
         background-color: #262228; }
   section#section-5 .section-5 .right1 {
-    padding: 100px; }
+    margin: 5rem auto;
+    text-align: center;
+    line-height: 100%; }
     section#section-5 .section-5 .right1 img {
       padding-left: 40px;
       width: 100px;
       height: 100px; }
 
 section#section-5 img {
-  height: 100px;
+  height: 50px;
   width: 100%; }
 
 section#section-6 .section-6 img {
@@ -466,16 +468,19 @@ section#section-6 .section-6 .left1 {
   padding: 40px 0;
   text-align: center; }
   section#section-6 .section-6 .left1 img {
-    width: 300px;
-    height: 300px; }
+    width: 14rem;
+    height: 14rem; }
 
 section#section-6 .section-6 .right1 {
   padding: 40px 40px;
-  text-align: left; }
+  text-align: left;
+  text-align: center; }
   section#section-6 .section-6 .right1 h3 {
+    text-align: left;
     line-height: 1;
     color: #0375b4; }
   section#section-6 .section-6 .right1 p {
+    text-align: left;
     padding-top: 10px;
     color: #262228; }
   section#section-6 .section-6 .right1 span {
